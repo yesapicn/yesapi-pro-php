@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://pro.yesapi.cn"><img src="https://img.shields.io/badge/官网-pro.yesapi.cn-blue?style=flat-square" alt="官网" /></a>
   <a href="http://demo.yesapi.cn"><img src="https://img.shields.io/badge/在线演示-demo.yesapi.cn-green?style=flat-square" alt="在线演示" /></a>
-  <img src="https://img.shields.io/badge/版本-PHP%205.0-orange?style=flat-square" alt="版本" />
+  <img src="https://img.shields.io/badge/版本-Pro%205.9-orange?style=flat-square" alt="版本" />
   <img src="https://img.shields.io/badge/框架-PhalApi%20%7C%20PHP%207.2%2B-purple?style=flat-square" alt="框架" />
   <img src="https://img.shields.io/badge/客户-500%2B%20企业-red?style=flat-square" alt="客户数量" />
   <img src="https://img.shields.io/badge/开发者-60%2C000%2B-yellow?style=flat-square" alt="开发者数量" />
@@ -34,18 +34,18 @@
 
 **YesApi Pro PHP 版（接口大师）** 是基于 PhalApi 框架打造的企业级 API 低代码开发与接口开放平台。专为中小企业、PHP 技术团队量身优化：
 
-- 📦 **当天交付**：下午签合同，当天完成私有部署，晚上可以验收
+- 📦 **当天交付**：上午签合同，最快当天完成私有部署，晚上可以验收
 - ⚡ **3 天上线**：低代码配置，从 MySQL 数据库直接生成增删改查 API
+- ⚡ **API计费**：支持对你自己接口进行收费，支持免费试用、接口套餐包、余额充值等
 - 🔒 **源码可控**：提供完整 PHP 源码，私有部署，数据不出内网
 - 🛠️ **宝塔友好**：完美支持宝塔面板一键部署，PHP 团队零学习成本
 - 💰 **超高性价比**：旗舰版 ¥23,899，比自研节省 **80%+ 成本**
 
 ```
-传统自研：立项 → 设计 → 开发 → 测试 → 上线 ≈ 3~6 个月 + 数十万成本
+传统自研：立项 → 设计 → 开发 → 测试 → 上线 ≈ 1~3 个月 + 近十万成本
 YesApi Pro PHP：采购 → 宝塔部署 → 低代码配置 → 上线 ≈ 1~3 天
 ```
 
-<!-- 截图：产品概览/后台首屏 -->
 > 📸 *截图待补充：产品概览图*
 
 
@@ -58,7 +58,7 @@ YesApi Pro PHP：采购 → 宝塔部署 → 低代码配置 → 上线 ≈ 1~3 
 | **数据库直接生成 API** | 连接 MySQL/SQL Server，一键生成增删改查 API，无需写代码 |
 | **可视化接口配置** | 表单拖拽配置接口参数、权限规则、请求限流 |
 | **自定义业务逻辑** | 支持 PHP 脚本扩展，满足复杂业务定制需求 |
-| **接口版本管理** | 多版本并行，灰度发布，平滑迁移，兼容历史调用方 |
+| **一键转发上游接口** | 支持可视化配置和转发上游供应商接口 |
 | **自动生成文档** | 发布即有在线 API 文档，支持在线调试与 SDK 导出 |
 
 ### 🌐 接口开放平台
@@ -88,8 +88,8 @@ YesApi Pro PHP：采购 → 宝塔部署 → 低代码配置 → 上线 ≈ 1~3 
 | **宝塔面板一键部署** | 最受 PHP 团队欢迎的部署方式，5 分钟搭好环境 |
 | **Docker 容器化** | 提供 Docker Compose，适合 DevOps 团队 |
 | **Nginx/Apache 支持** | 兼容主流 Web 服务器，配置文档完善 |
-| **Webhook 推送** | 接口事件触发 Webhook，轻松对接钉钉/企微/飞书等 |
-| **第三方登录** | 支持微信、QQ、微博等第三方账号快速接入 |
+| **Webhook 推送** | 工单事件触发 Webhook，轻松对接钉钉/企微/飞书等 |
+| **第三方登录** | 支持微信授权第三方账号快速接入 |
 
 
 ## 🗃️ 技术规格
@@ -98,7 +98,7 @@ YesApi Pro PHP：采购 → 宝塔部署 → 低代码配置 → 上线 ≈ 1~3 
 
 ```
 框架：PhalApi（国内最大 PHP API 框架之一）
-运行环境：PHP 7.2 / 7.4 / 8.0 / 8.1+
+运行环境：PHP 7.2 / 7.3
 数据库：MySQL 5.6+ / SQL Server
 缓存：Redis（可选）/ 文件缓存
 部署方式：宝塔面板 / LAMP / LNMP / Docker
@@ -111,8 +111,8 @@ YesApi Pro PHP：采购 → 宝塔部署 → 低代码配置 → 上线 ≈ 1~3 
 |--------|--------|------|
 | MySQL 5.6+ | ✅ | 主力数据库，全功能支持 |
 | SQL Server | ✅ | 支持企业常见数据源 |
-| Oracle | ❌ | 如需支持请选择 Java 版 |
-| PostgreSQL | ❌ | 如需支持请选择 Java 版 |
+| Oracle | ✅ | 如需支持请选择 Java 版 |
+| PostgreSQL | ✅ | 如需支持请选择 Java 版 |
 | 达梦 DM | ❌ | 信创环境请选择 Java 版 |
 
 > 💡 **如需信创（达梦/OpenGauss/鲲鹏/麒麟）适配**，请参考 [Java 版](https://github.com/yesapicn/yesapi-pro)。
@@ -126,34 +126,21 @@ YesApi Pro PHP：采购 → 宝塔部署 → 低代码配置 → 上线 ≈ 1~3 
 # 1. 宝塔面板新建站点，选择 PHP 7.4+
 # 2. 上传源码包并解压到站点根目录
 # 3. 修改 /config/app.php 中的数据库配置
-# 4. 导入数据库文件 database/yesapi.sql
+# 4. 导入数据库文件 data/phalapi_pro.sql
 # 5. 访问 http://你的域名/admin 进入管理后台
 ```
 
 > 📌 默认管理员账号：`admin` / 密码：`admin123`（请登录后立即修改）
 
-### 方式二：Docker 快速体验
+### 方式二：安装向导
 
-```bash
-# 拉取镜像
-docker pull yesapi/yesapi-php-pro:latest
+或者打开首页：http://你的域名/，点击进入安装向导。
 
-# 启动（需要提前准备 MySQL）
-docker run -d \
-  -p 80:80 \
-  -e DB_HOST=your-mysql-host \
-  -e DB_NAME=yesapi \
-  -e DB_USER=root \
-  -e DB_PASS=yourpassword \
-  --name yesapi-php-pro \
-  yesapi/yesapi-php-pro:latest
-```
-
-> 📌 启动后访问 `http://localhost/admin` 进入管理后台
+> 📌 安装地址： `http://你的域名/install` 进入在线安装
 
 ### 方式三：在线演示
 
-直接访问 [http://demo.yesapi.cn](http://demo.yesapi.cn) 体验完整功能，无需安装。
+直接访问 [http://pro-demo.yesapi.cn/](http://pro-demo.yesapi.cn/) 体验完整功能，无需安装。
 
 
 ## 🎯 适用场景
@@ -231,7 +218,7 @@ docker run -d \
 
 > 一次性买断制，无订阅，无续费，无隐藏费用。
 
-### PHP 版 (v5.0) 授权版本
+### PHP 版 (v5.9) 授权版本
 
 | 版本 | 价格 | 适用场景 |
 |------|------|---------|
@@ -280,11 +267,10 @@ docker run -d \
 | 资源 | 链接 |
 |------|------|
 | 📖 官方文档 | [pro.yesapi.cn](https://pro.yesapi.cn/) |
-| 🎮 在线演示 | [demo.yesapi.cn](http://demo.yesapi.cn) |
+| 🎮 在线演示 | [pro-demo.yesapi.cn](http://pro-demo.yesapi.cn/) |
 | 📹 视频教程 | [视频中心](https://pro.yesapi.cn/videos.html) |
 | 🆚 Java 版仓库 | [yesapicn/yesapi-pro](https://github.com/yesapicn/yesapi-pro) |
 | 🐛 问题反馈 | [提交 Issue](https://github.com/yesapicn/yesapi-pro-php/issues) |
-| 📊 竞品对比 | [选型指南](https://pro.yesapi.cn/vs-postman.html) |
 
 
 ## ❓ 常见问题
@@ -311,7 +297,7 @@ docker run -d \
 
 完全支持，而且是 PHP 版最推荐的部署方式。  
 宝塔面板操作步骤详见官方部署文档，一般 30 分钟内即可完成环境搭建和程序安装。  
-支持 PHP 7.2 / 7.4 / 8.0 / 8.1，MySQL 5.6+，Nginx 或 Apache。
+支持 PHP 7.2 / 7.3，MySQL 5.6+，Nginx 或 Apache。
 </details>
 
 <details>
@@ -333,15 +319,14 @@ docker run -d \
 <details>
 <summary>Q: 有没有 PHP 版的在线演示？</summary>
 
-有！访问 [demo.yesapi.cn](http://demo.yesapi.cn) 即可体验完整的 PHP 版功能演示。  
-也可以联系我们申请 **30 天试用授权**，在你自己的服务器上完整体验。
+有！访问 [pro-demo.yesapi.cn](http://pro-demo.yesapi.cn) 即可体验完整的 PHP 版功能演示。  
 </details>
 
 <details>
 <summary>Q: 支持哪些 PHP 版本？</summary>
 
-支持 PHP 7.2、7.4、8.0、8.1 及以上版本。  
-推荐使用 PHP 7.4 或 8.0，性能与兼容性最佳。  
+支持 PHP 7.2、7.3 及以上版本。  
+推荐使用 PHP 7.3，性能与兼容性最佳。  
 PHP 5.x 不再支持（官方已停止维护）。
 </details>
 
