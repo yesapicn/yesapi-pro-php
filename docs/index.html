@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PhalApi Pro 专业版技术文档</title>
+  <meta name="Author" content="PhalApi,ecitlm,dogstar">
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="description" content="PhalApi Pro 专业版技术文档">
+  <meta name="keywords" content="PhalApi Pro 专业版技术文档">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/static/vue.css">
+</head>
+
+<body>
+  <div id="app">文档正在拼命加载中...</div>
+</body>
+<script>
+  window.$docsify = {
+    themeColor: '#FBAB1B',
+    name: 'PhalApi Pro 5.x 技术文档',
+    repo: '',
+    auto2top: true,
+    coverpage: true,
+    executeScript: true,
+    loadSidebar: true,
+    loadNavbar: true,
+    mergeNavbar: true,
+    maxLevel: 4,
+    subMaxLevel: 2,
+
+    formatUpdated: '{MM}/{DD} {HH}:{mm}',
+    plugins: [
+      function (hook, vm) {
+        hook.beforeEach(function (html) {
+          return "\n" + "\n\n" + html
+            + '\n----\n'
+            + ' © 2020 - 2024 <a href="http://pro.yesapi.cn/" target="_blank">PhalApi Pro</a> All Rights Reserved. 未经授权，禁止传播、禁用用于商业用途。'
+        })
+      }
+    ],
+
+   search: {
+      maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      paths: 'auto',
+      placeholder: '搜索',
+      noData: '没有记录！'
+    }
+
+
+  }
+</script>
+
+<!-- <script src="https://cdn.bootcss.com/docsify/4.6.10/docsify.min.js"></script> -->
+<!-- <script src="//unpkg.com/docsify@4.6.10/lib/docsify.min.js"></script> -->
+<script src="./docsify.min.js"></script>
+<script src="/static/prism-bash.min.js"></script>
+<script src="/static/prism-php.min.js"></script>
+<script src="/static/prism-markdown.min.js"></script>
+<script src="/static/prism-nginx.min.js"></script>
+<!-- <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script> -->
+<script src="./search.min.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bbd0e84d1a1464f844d594adc1610100";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</html>
